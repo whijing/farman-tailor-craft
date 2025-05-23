@@ -17,7 +17,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
           playsInline
         >
-          <source src="/your-video.mp4" type="video/mp4" />
+          <source src="/tailor-background.mp4" type="video/mp4" />
           {/* Fallback to image if video doesn't load */}
           <img 
             src="https://images.unsplash.com/photo-1558304970-abd589baebe5?ixlib=rb-4.0.3" 
