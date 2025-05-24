@@ -27,6 +27,15 @@ const Hero = () => {
         </video>
       </div>
       
+      {/* Blended overlay image */}
+      <div className="absolute inset-0 z-5">
+        <img 
+          src="https://images.unsplash.com/photo-1594736797933-d0a9ba2fe65f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2940&q=80" 
+          alt="Fabric texture overlay" 
+          className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+        />
+      </div>
+      
       {/* Content overlay */}
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-20">
         <h1 className="text-7xl md:text-8xl font-serif font-bold mb-8 text-white leading-none tracking-tighter">
