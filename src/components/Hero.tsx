@@ -5,30 +5,13 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/70 via-[#1C1C1E]/60 to-[#1C1C1E] z-10"></div>
+      {/* Background video/image with overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1C1C1E]/70 via-[#1C1C1E]/60 to-[#1C1C1E]"></div>
       
-      {/* Video background */}
-      <div className="absolute inset-0">
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          className="w-full h-full object-cover"
-          playsInline
-        >
-          <source src="/your-video.mp4" type="video/mp4" />
-          {/* Fallback to image if video doesn't load */}
-          <img 
-            src="https://images.unsplash.com/photo-1558304970-abd589baebe5?ixlib=rb-4.0.3" 
-            alt="Farman Tailors" 
-            className="w-full h-full object-cover" 
-          />
-        </video>
-      </div>
+      {/* Video background - would be replaced with actual content */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1558304970-abd589baebe5?ixlib=rb-4.0.3')] bg-cover bg-center"></div>
       
-      {/* Content overlay */}
-      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-20">
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-7xl md:text-8xl font-serif font-bold mb-8 text-white leading-none tracking-tighter">
           <span className="block">Farman</span>
           <span className="block mt-2">Tailors</span>
