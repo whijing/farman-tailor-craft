@@ -1,23 +1,22 @@
-
 import React from 'react';
 
 const About = () => {
   const values = [
     {
       title: "Legacy",
-      description: "Four decades of textile expertise passed down through generations"
+      description: "More than five decades of excellence in uniform manufacturing since 1968"
     },
     {
-      title: "Precision",
-      description: "Meticulous attention to every stitch, seam, and detail"
+      title: "Customer Focus",
+      description: "Special attention to each client's individual requirements with customized solutions"
     },
     {
-      title: "Innovation",
-      description: "Blending traditional craftsmanship with modern manufacturing techniques"
+      title: "Quality",
+      description: "Commitment to producing high-quality products with timely shipments and efficient services"
     },
     {
-      title: "Integrity",
-      description: "Honest business practices and transparent client relationships"
+      title: "Strong Roots",
+      description: "Our success is built on treating our workers as partners, ensuring loyal support and excellence"
     }
   ];
 
@@ -30,37 +29,46 @@ const About = () => {
               Our Story
             </h2>
             <p className="text-xl text-[#1C1C1E]/80 leading-relaxed mb-8">
-              Farman Tailors represents the perfect blend of traditional Pakistani craftsmanship 
-              and modern manufacturing capabilities. As a second-generation business, we've built 
-              our reputation on precision tailoring, quality materials, and unwavering commitment 
-              to client satisfaction.
+              Farman Ali Tailor Master stands as one of the largest uniform suppliers in Northern Areas. 
+              Since our establishment in 1968, we have expanded our reach across various districts in 
+              Northern Areas, making these our major markets. Our reputation is built on producing 
+              high-quality products, ensuring timely shipments, and delivering efficient services.
+            </p>
+            <p className="text-xl text-[#1C1C1E]/80 leading-relaxed mb-8">
+              Our emphasis lies in giving special attention to each client, taking care to accurately 
+              determine individual requirements. We believe that successful management requires efficiency, 
+              administrative ability, and dedication. However, for us at Farman Ali Tailor Master, the 
+              ultimate test of success lies in attaining customers' satisfaction.
             </p>
             <p className="text-xl text-[#1C1C1E]/80 leading-relaxed mb-12">
-              From our state-of-the-art facility in Pakistan, we manufacture high-quality industrial 
-              clothing, safety wear, and custom uniforms for businesses worldwide. Our skilled 
-              workforce and advanced production systems enable us to handle large-scale orders 
-              while maintaining the highest quality standards.
+              Our management's strength comes from its strong roots - our workers. We treat each worker 
+              as a partner, and their intermingling has nourished us to build up as a strong enterprise. 
+              In return, we receive unequivocal and loyal support that enables us to serve our buyers 
+              effectively and with greater inspiration.
             </p>
             
-            <div className="grid grid-cols-2 gap-x-8 gap-y-12">
+            <div className="grid grid-cols-2 gap-8">
               {values.map((value, index) => (
-                <div key={index}>
-                  <h3 className="text-xl font-serif font-semibold text-[#1C1C1E] mb-2">{value.title}</h3>
+                <div key={index} className="space-y-2">
+                  <h3 className="text-xl font-serif font-semibold text-[#1C1C1E]">{value.title}</h3>
                   <p className="text-[#1C1C1E]/70">{value.description}</p>
                 </div>
               ))}
             </div>
           </div>
           
-          <div className="relative">
-            <div className="aspect-[3/4] relative z-10">
+          <div className="relative group">
+            <div className="aspect-[3/4] relative z-10 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1507680465142-eca2f078d9d6?ixlib=rb-4.0.3" 
                 alt="Craftsmanship" 
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1C1C1E] to-transparent opacity-30 
+                transition-opacity duration-700 group-hover:opacity-20"></div>
             </div>
-            <div className="absolute w-full h-full border-2 border-[#1C1C1E] top-8 left-8 -z-0"></div>
+            <div className="absolute w-full h-full border-2 border-[#1C1C1E] top-8 left-8 -z-0 
+              transition-transform duration-700 group-hover:translate-x-2 group-hover:translate-y-2"></div>
           </div>
         </div>
       </div>

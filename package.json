@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.2.7",
     "@fontsource/inter": "^5.2.5",
     "@fontsource/playfair-display": "^5.2.5",
     "@hookform/resolvers": "^3.9.0",
@@ -71,6 +72,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "autoprefixer": "^10.4.20",
+    "caniuse-lite": "^1.0.30001720",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
